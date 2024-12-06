@@ -36,6 +36,7 @@ export const NavigationBar = () => {
       alignItems="center"
       px={8}
       py={1}
+      sx={{ background: "#fff" }}
     >
       <Stack flexDirection="row" gap={8}>
         {navLinks.map((navLink) => (
@@ -43,7 +44,7 @@ export const NavigationBar = () => {
             style={{
               textTransform: "uppercase",
               fontWeight: "bold",
-              fontSize: 12,
+              fontSize: 14,
             }}
             href={navLink.route}
             key={navLink.route}
